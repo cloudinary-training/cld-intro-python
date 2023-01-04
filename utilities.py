@@ -1,6 +1,6 @@
 import json
 from logging import NOTSET, lastResort
-# read from .env file
+
 from dotenv import load_dotenv
 load_dotenv()
 

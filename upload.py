@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import cloudinary
-from cloudinary import uploader, api
+from cloudinary import uploader
 
 # get reference to config instance
 config = cloudinary.config(secure=True)
@@ -12,12 +12,12 @@ print(config.cloud_name)
 print(config.api_key)
 
 # Basic Upload Method
-basic_upload = uploader.upload("./assets/llama.jpg")
-print("**** Basic upload ****\nDelivery URL: ", json.dumps(basic_upload,indent=2), "\n")
+# basic_upload = uploader.upload("./assets/llama.jpg")
+# print("**** Basic upload ****\nDelivery URL: ", json.dumps(basic_upload,indent=2), "\n")
  
 # # Resource Type
-# resource_vid = uploader.upload("assets/glacier.mp4", resource_type = "video")
-# print("**** Resource Type: video ****\nDelivery URL: ", json.dumps(resource_vid,indent=2), "\n")
+resource_vid = uploader.upload("assets/glacier.mp4", resource_type = "video")
+print("**** Resource Type: video ****\nDelivery URL: ", json.dumps(resource_vid,indent=2), "\n")
 
 # resource_auto = uploader.upload("assets/glacier.mp4", resource_type = "auto")
 # print("**** Resource Type: auto ****\nDelivery URL: ", json.dumps(resource_auto,indent=2), "\n")

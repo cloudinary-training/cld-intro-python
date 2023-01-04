@@ -1,6 +1,5 @@
-# read from .env file
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv() # reading variables from .env file
 
 # load_dotenv() needs to be run before importing cloudinary
 import cloudinary
