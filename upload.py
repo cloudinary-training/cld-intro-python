@@ -25,7 +25,7 @@ print("**** Resource Type: video ****\nDelivery URL: ", json.dumps(resource_vid,
 # resource_JSON = uploader.upload("assets/south-america.json", resource_type = "auto")
 # print("**** Resource Type: raw ****\nDelivery URL: ", json.dumps(resource_JSON,indent=2), "\n")
 
-# resource_raw = uploader.upload("assets/crazy_robot.ttf", resource_type = "raw")
+# resource_raw = uploader.upload("assets/y2k_bug.ttf", resource_type = "raw")
 # print("**** Resource Type: raw ****\nDelivery URL: ", json.dumps(resource_raw,indent=2), "\n")
 
 

@@ -25,7 +25,6 @@ url, options = cloudinary_url(
     width=300,
     height=300,
     crop="thumb",
-    gravity="auto",
     radius="max",
     format="png"
 )
@@ -38,7 +37,6 @@ url, options = cloudinary_url(
     width=300,
     height=300,
     crop="fill",
-    gravity="auto",
     border="10px_solid_green"
 )
 print("**** Adding a green border to an asset ****\nTransformation URL --> " + url, "\n")

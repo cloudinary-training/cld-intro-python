@@ -23,8 +23,8 @@ print("✓ glacier")
 uploader.upload("./assets/iguana.jpg", public_id= "iguana")
 print("✓ iguana")
     
-uploader.upload("./assets/crazy_robot.ttf", public_id= "crazy_robot", resource_type = "raw")
-print("✓ crazy robot font")
+uploader.upload("./assets/y2kbug.ttf", public_id= "y2kbug", resource_type = "raw")
+print("✓ y2k bug font")
     
 uploader.upload("./assets/cld-sample.jpg", public_id= "cld-sample")
 print("✓ cld-sample")
