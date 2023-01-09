@@ -22,9 +22,8 @@ print("**** Set up and configure the SDK:****\n",
 # Resize an asset
 url, options = cloudinary_url(
     "sealion",
-    width=300,
-    height=400,
-    crop="fit"
+    width=500,
+    crop="scale"
 )
 print("****Resize: Transform to scale down, maintaining original aspect ratio****\nTransformation URL --> " + url, "\n")
 
