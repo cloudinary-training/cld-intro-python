@@ -12,8 +12,8 @@ print(config.cloud_name)
 print(config.api_key)
 
 # Basic Upload Method
-# basic_upload = uploader.upload("./assets/llama.jpg")
-# print("**** Basic upload ****\nDelivery URL: ", json.dumps(basic_upload,indent=2), "\n")
+basic_upload = uploader.upload("./assets/llama.jpg")
+print("**** Basic upload ****\nDelivery URL: ", json.dumps(basic_upload,indent=2), "\n")
  
 # # Resource Type
 # resource_vid = uploader.upload("assets/glacier.mp4", resource_type = "video")
@@ -29,12 +29,11 @@ print(config.api_key)
 # print("**** Resource Type: raw ****\nDelivery URL: ", json.dumps(resource_raw,indent=2), "\n")
 
 
-
 # # Public ID - Naming Options
 
 #default
-default_public_id = uploader.upload("assets/puma.jpg")
-print("**** Default - 20 random character Public ID - if nothing is specified upon upload ****\nDelivery URL: ", json.dumps(default_public_id,indent=2), "\n")
+# default_public_id = uploader.upload("assets/puma.jpg")
+# print("**** Default - 20 random character Public ID - if nothing is specified upon upload ****\nDelivery URL: ", json.dumps(default_public_id,indent=2), "\n")
 
 
 # # use filename as public ID, don't attempt to make unique
