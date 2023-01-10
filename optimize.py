@@ -21,7 +21,7 @@ print("**** Set up and configure the SDK:****\n",
 
 # Resize an asset
 url, options = cloudinary_url(
-    "sealion",
+    "llama",
     width=500,
     crop="scale"
 )
@@ -29,17 +29,18 @@ print("****Resize: Transform to scale down, maintaining original aspect ratio***
 
 # Crop an asset
 url, options = cloudinary_url(
-    "sealion",
-    height=200,
-    crop="scale"
+    "cld-sample",
+    height=800,
+    width=800,
+    crop="fill"
 )
 print("**** Crop an asset****\nTransformation URL --> " + url, "\n")
 
 # Crop with gravity
 url, options = cloudinary_url(
     "cld-sample",
-    width=200,
-    height=200,
+    width=800,
+    height=800,
     crop="thumb",
     gravity="auto"
 )
@@ -48,22 +49,33 @@ print("**** Crop with Gravity ****\nTransformation URL --> " + url, "\n")
 # Auto format
 url, options = cloudinary_url(
     "sealion",
-    width=300,
-    height=400,
-    crop="fit",
-    fetch_format="auto"
+    width=600,
+    height=800,
+    crop="fill",
 )
 print("**** Auto Format ****\nTransformation URL --> " + url, "\n")
 
 # Auto quality
 url, options = cloudinary_url(
     "sealion",
-    width=300,
-    height=400,
-    crop="fit",
-    quality="auto"
+    width=600,
+    height=800,
+    crop="fill",
+    fetch_format="auto"
 )
 print("**** Auto Quality ****\nTransformation URL --> " + url, "\n")
+
+# Auto format AND Auto quality - Cloudinary's special sauce
+url, options = cloudinary_url(
+    "sealion",
+    width=600,
+    height=800,
+    crop="fill",
+    fetch_format="auto",
+    quality="auto"
+)
+print("**** Auto Format AND Auto Quality - Both ****\nTransformation URL --> " + url, "\n")
+
 
 
 # Rounding
