@@ -21,17 +21,6 @@ url, options = cloudinary_url(
     type="fetch")
 print("**** Fetching Remote image ****\nTransformation URL --> " + url, "\n")
 
-# Fetching remote image, and making some transformations in the URL build
-url, options = cloudinary_url("https://upload.wikimedia.org/wikipedia/commons/1/18/Bradypus.jpg",
-                type="fetch",
-                width=500,
-                height=500,
-                crop='fill',
-                gravity="face",
-                radius="max",
-                fetch_format="auto")
-print("**** Fetching Remote image ****\nTransformation URL --> " + url, "\n")
-
 # Mapping a cloud folder remote-images to a path to images on the internet
 # URL prefix: https://cloudinary-training.github.io/cld-advanced-concepts/assets/images/
 

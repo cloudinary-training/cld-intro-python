@@ -27,35 +27,40 @@ print(config.api_key)
 # print(json.dumps(len(result['resources'])))
 
 # List all images with a given prefix - we are hoping to find the image of a llama that we previously uploaded
-list_by_prefix = api.resources(
-        type="upload",
-        prefix="iguan")
+# list_by_prefix = api.resources(
+#         type="upload",
+#         prefix="galap")
 
-print(json.dumps(list_by_prefix, indent=2))
+# print(json.dumps(list_by_prefix, indent=2))
 
 
 # Rename an asset
 # rename_asset = uploader.rename("sealion4", "sealion5")
 # print(json.dumps(rename_asset, indent=2))
 
+# Uploading in order to Destroy or Delete:
+# uploader.upload("./assets/anteater.jpg", public_id= "naughty_anteater")
+# uploader.upload("./assets/anteater.jpg", public_id= "friendly_anteater")
+# uploader.upload("./assets/anteater.jpg", public_id= "sleepy_anteater")
+
 #Destroy with Upload API
-# destroy = uploader.destroy("sample", invalidate = True)
+# destroy = uploader.destroy("naughty_anteater", invalidate = True)
 # print(json.dumps(destroy, indent=2))
 
 # Delete multiple with Admin API
-# delete_multiple = api.delete_resources(["rnqhdhg1bkao8slxmney", "nrzichmiv8f2krw8s91n"])
+# delete_multiple = api.delete_resources(["friendly_anteater", "sleepy_anteater"])
 # print(json.dumps(delete_multiple, indent=2))
 
 #Upload and tag a single asset
-# upload_and_tag = uploader.upload("assets/llama.jpg", tags = ["peru", "not an alpaca"])
+# upload_and_tag = uploader.upload("assets/llama.jpg", public_id="tagged_llama", tags = ["peru", "not an alpaca"])
 # print(json.dumps(upload_and_tag, indent=2))
 
 # Tag an existing asset
-# tag_existing = uploader.add_tag(["galapagos", "ocean"], "owajuca2hssyorljfxvv")
+# tag_existing = uploader.add_tag(["machu picchu", "grass"], "tagged_llama")
 # print(json.dumps(tag_existing, indent=2))
 
 # Remove all tags from an asset
-# remove_all_tags = uploader.remove_all_tags("owajuca2hssyorljfxvv")
+# remove_all_tags = uploader.remove_all_tags("tagged_llama")
 # print(json.dumps(remove_all_tags, indent=2))
 
 # Rename an asset and invalidate
