@@ -48,7 +48,7 @@ print(config.api_key)
 # resource_JSON = uploader.upload("assets/south-america.json", resource_type = "auto")
 # print("**** Resource Type: raw ****\nDelivery URL: ", json.dumps(resource_JSON,indent=2), "\n")
 
-# resource_raw = uploader.upload("assets/y2k_bug.ttf", resource_type = "raw")
+# resource_raw = uploader.upload("assets/y2kbug.ttf", resource_type = "raw")
 # print("**** Resource Type: raw ****\nDelivery URL: ", json.dumps(resource_raw,indent=2), "\n")
 
 
@@ -74,18 +74,17 @@ print(config.api_key)
 # # determine your own public ID
 # specify_public_id = uploader.upload("assets/anteater.jpg", 
 #   public_id = "i-love-ants")
-# print("**** Determine Your Own Public ID ****\nDelivery URL: ", json.dumps(specify_public_ID,indent=2), "\n")
-
+# print("**** Determine Your Own Public ID ****\nDelivery URL: ", json.dumps(specify_public_id,indent=2), "\n")
 
 # # Foldering
 # create_folder_by_public_ID = uploader.upload("assets/iguana.jpg", 
 #   public_id = "galapagos/iguana")
 # print("**** Create Folder called galapagos, and upload image to that folder with public ID of iguana within Public ID Parameter ****\nDelivery URL: ", json.dumps(create_folder_by_public_ID,indent=2), "\n")
 
-# folder_within_folder = uploader.upload("assets/puma.jpg", 
-#   use_filename = True, 
-#   unique_filename = False,
-#   folder = "argentina/animals")
-# print("**** Create Folder called argentina, with a subfolder called animals inside it, and upload image to that folder without a specified public ID ****\nDelivery URL: ", json.dumps(folder_within_folder,indent=2), "\n")
+folder_within_folder = uploader.upload("assets/puma.jpg", 
+  use_filename = True, 
+  unique_filename = True,
+  folder = "argentina/animals")
+print("**** Create Folder called argentina, with a subfolder called animals inside it, and upload image to that folder without a specified public ID ****\nDelivery URL: ", json.dumps(folder_within_folder,indent=2), "\n")
 
 
