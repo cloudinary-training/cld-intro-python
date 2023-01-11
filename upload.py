@@ -17,7 +17,7 @@ print(config.api_key)
 
 # # Upload Source Options 
 
-# #HTTP or HTTPS URL - Wikimedia
+#HTTP or HTTPS URL - Wikimedia
 # https = uploader.upload("https://upload.wikimedia.org/wikipedia/commons/9/99/Capivara%28Hydrochoerus_hydrochaeris%29.jpg")
 # print("**** Wikimedia ****\nDelivery URL: ", json.dumps(https,indent=2), "\n")
 

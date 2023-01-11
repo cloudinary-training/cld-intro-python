@@ -67,16 +67,16 @@ print("**** Set up and configure the SDK:****\n",
 # print("**** Auto Quality ****\nTransformation URL --> " + url, "\n")
 
 # Auto format, Auto quality, Auto Gravity - Cloudinary's special sauce
-# url, options = cloudinary_url(
-#     "cld-sample",
-#     width=600,
-#     height=800,
-#     crop="fill",
-#     gravity="auto",
-#     fetch_format="auto",
-#     quality="auto",
-# )
-# print("**** Auto Format, Auto Quality, Auto Gravity - Both ****\nTransformation URL --> " + url, "\n")
+url, options = cloudinary_url(
+    "cld-sample",
+    width=600,
+    height=800,
+    crop="fill",
+    gravity="auto",
+    fetch_format="auto",
+    quality="auto",
+)
+print("**** Auto Format, Auto Quality, Auto Gravity - Both ****\nTransformation URL --> " + url, "\n")
 
 
 

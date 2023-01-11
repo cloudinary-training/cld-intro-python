@@ -11,6 +11,9 @@ print("✓ anteater")
 uploader.upload("./assets/puma.jpg", public_id= "puma")
 print("✓ puma")
 
+uploader.upload("./assets/cld-training-logo.png", public_id= "cld-training-logo")
+print("✓ cloudinary training logo")
+
 uploader.upload("./assets/llama.jpg", public_id= "llama")
 print("✓ llama")
 
