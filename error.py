@@ -20,8 +20,8 @@ print("**** Set up and configure the SDK:****\n",
 
 # Auto format, Auto quality, Auto Gravity - Cloudinary's special sauce
 url, options = cloudinary_url(
-    "cld-sample",
-    width=600,
+    "llama",
+    width=500,
     crop="scale",
     gravity="auto",
 )
