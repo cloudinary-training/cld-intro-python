@@ -64,5 +64,5 @@ print(config.api_key)
 # print(json.dumps(remove_all_tags, indent=2))
 
 # Rename an asset and invalidate
-# rename_and_invalidate = uploader.rename("sealion4", "sealion5", invalidate = True)
+# rename_and_invalidate = uploader.rename("sealion5", "sealion6", invalidate = True)
 # print(json.dumps(rename_and_invalidate, indent=2))
