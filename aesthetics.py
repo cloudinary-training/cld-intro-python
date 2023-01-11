@@ -93,14 +93,14 @@ print("**** Set up and configure the SDK:****\n",
 
 
 # Overlays - Image over video
-url, options = cloudinary_url("tortoise", resource_type="video",
-                              transformation=[
-                                  {'crop': 'fill', 'width': 500},
-                                  {'overlay': 'cld-training-logo'},
-                                  {'flags': "layer_apply", 'gravity': "north_east", 'y': 10, 'x': 10, 'width':100, 'opacity':50},
-                                  {'quality': 'auto'}
-                              ])
-print("**** Overlay - Transform to add a Cloudinary logo overlay to the north east corner of an video ****\nTransformation URL --> " + url, "\n")
+# url, options = cloudinary_url("tortoise", resource_type="video",
+#                               transformation=[
+#                                   {'crop': 'fill', 'width': 500},
+#                                   {'overlay': 'cld-training-logo'},
+#                                   {'flags': "layer_apply", 'gravity': "north_east", 'y': 10, 'x': 10, 'width':100, 'opacity':50},
+#                                   {'quality': 'auto'}
+#                               ])
+# print("**** Overlay - Transform to add a Cloudinary logo overlay to the north east corner of an video ****\nTransformation URL --> " + url, "\n")
 
 
 # Overlays - Image over video (same as previous example, but using Video tag)
