@@ -16,14 +16,14 @@ print(config.api_key)
 # To do a remote fetch, you will need to go to security, settings, and uncheck "fetched url"
 
 # Fetching image
-url, options = cloudinary_url(
-    "https://upload.wikimedia.org/wikipedia/commons/1/18/Bradypus.jpg",
-    type="fetch")
-print("**** Fetching Remote image ****\nTransformation URL --> " + url, "\n")
+# url, options = cloudinary_url(
+#     "https://upload.wikimedia.org/wikipedia/commons/1/18/Bradypus.jpg",
+#     type="fetch")
+# print("**** Fetching Remote image ****\nTransformation URL --> " + url, "\n")
 
 # Mapping a cloud folder remote-images to a path to images on the internet
 # URL prefix: https://cloudinary-training.github.io/cld-advanced-concepts/assets/images/
 
-url, options = cloudinary_url(
-    "remote-images/dolphin.jpg", width="700", zoom="500", crop="thumb")
-print("**** Auto Upload - Lazy Migration ****\nTransformation URL --> " + url, "\n")
+# url, options = cloudinary_url(
+#     "remote-images/dolphin.jpg", width="700", zoom="500", crop="thumb")
+# print("**** Auto Upload - Lazy Migration ****\nTransformation URL --> " + url, "\n")

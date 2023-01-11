@@ -67,16 +67,16 @@ print("**** Set up and configure the SDK:****\n",
 # print("**** Auto Quality ****\nTransformation URL --> " + url, "\n")
 
 # Auto format, Auto quality, Auto Gravity - Cloudinary's special sauce
-url, options = cloudinary_url(
-    "cld-sample",
-    width=600,
-    height=800,
-    crop="fill",
-    gravity="auto",
-    fetch_format="auto",
-    quality="auto",
-)
-print("**** Auto Format, Auto Quality, Auto Gravity - Both ****\nTransformation URL --> " + url, "\n")
+# url, options = cloudinary_url(
+#     "cld-sample",
+#     width=600,
+#     height=800,
+#     crop="fill",
+#     gravity="auto",
+#     fetch_format="auto",
+#     quality="auto",
+# )
+# print("**** Auto Format, Auto Quality, Auto Gravity - Both ****\nTransformation URL --> " + url, "\n")
 
 
 
@@ -157,11 +157,11 @@ print("**** Auto Format, Auto Quality, Auto Gravity - Both ****\nTransformation 
 
 
 # Overlays - Image over video
-url, options = cloudinary_url("tortoise", resource_type="video",
-                              transformation=[
-                                  {'crop': 'fill', 'width': 500},
-                                  {'overlay': 'cld-training-logo'},
-                                  {'flags': "layer_apply", 'gravity': "north_east", 'y': 10, 'x': 10, 'width':100, 'opacity':50},
-                                  {'quality': 'auto'}
-                              ])
-print("**** Overlay - Transform to add a Cloudinary logo overlay to the north east corner of an video ****\nTransformation URL --> " + url, "\n")
+# url, options = cloudinary_url("tortoise", resource_type="video",
+#                               transformation=[
+#                                   {'crop': 'fill', 'width': 500},
+#                                   {'overlay': 'cld-training-logo'},
+#                                   {'flags': "layer_apply", 'gravity': "north_east", 'y': 10, 'x': 10, 'width':100, 'opacity':50},
+#                                   {'quality': 'auto'}
+#                               ])
+# print("**** Overlay - Transform to add a Cloudinary logo overlay to the north east corner of an video ****\nTransformation URL --> " + url, "\n")

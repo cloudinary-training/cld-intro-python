@@ -18,5 +18,5 @@ create_named = api.create_transformation("small_profile_thumbnail",
 print(json.dumps(create_named, indent=2))
 
 # Apply named transformation to an image
-url, options = cloudinary_url("cld-sample", transformation=["small_profile_thumbnail"])
-print("**** Apply Named Transformation to an image ****\nTransformation URL --> " + url, "\n")
+# url, options = cloudinary_url("cld-sample", transformation=["small_profile_thumbnail"])
+# print("**** Apply Named Transformation to an image ****\nTransformation URL --> " + url, "\n")

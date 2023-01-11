@@ -15,7 +15,6 @@ print(config.api_key)
 # basic_upload = uploader.upload("./assets/llama.jpg")
 # print("**** Basic upload ****\nDelivery URL: ", json.dumps(basic_upload,indent=2), "\n")
 
- 
 # # Upload Source Options 
 
 # #HTTP or HTTPS URL - Wikimedia
@@ -81,10 +80,10 @@ print(config.api_key)
 #   public_id = "galapagos/iguana")
 # print("**** Create Folder called galapagos, and upload image to that folder with public ID of iguana within Public ID Parameter ****\nDelivery URL: ", json.dumps(create_folder_by_public_ID,indent=2), "\n")
 
-folder_within_folder = uploader.upload("assets/puma.jpg", 
-  use_filename = True, 
-  unique_filename = True,
-  folder = "argentina/animals")
-print("**** Create Folder called argentina, with a subfolder called animals inside it, and upload image to that folder without a specified public ID ****\nDelivery URL: ", json.dumps(folder_within_folder,indent=2), "\n")
+# folder_within_folder = uploader.upload("assets/puma.jpg", 
+#   use_filename = True, 
+#   unique_filename = True,
+#   folder = "argentina/animals")
+# print("**** Create Folder called argentina, with a subfolder called animals inside it, and upload image to that folder without a specified public ID ****\nDelivery URL: ", json.dumps(folder_within_folder,indent=2), "\n")
 
 
