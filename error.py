@@ -12,17 +12,11 @@ config = cloudinary.config(secure=True)
 print(config.cloud_name)
 print(config.api_key)
 
-# Log the configuration
-# ==============================
-print("**** Set up and configure the SDK:****\n",
-      config.cloud_name, config.api_key, "\n")
-
-
-# Auto format, Auto quality, Auto Gravity - Cloudinary's special sauce
+# Showing error of gravity with scale - for demo purposes
 url, options = cloudinary_url(
     "llama",
     width=500,
     crop="scale",
     gravity="auto",
 )
-print("**** Auto Format, Auto Quality, Auto Gravity - Both ****\nTransformation URL --> " + url, "\n")
+print("**** Demonstrating Error ****\nTransformation URL --> " + url, "\n")
