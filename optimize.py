@@ -20,12 +20,12 @@ print("**** Set up and configure the SDK:****\n",
 # DOCS: https://cloudinary.com/documentation/image_transformations
 
 # Resize an asset
-# url, options = cloudinary_url(
-#     "llama",
-#     width=500,
-#     crop="scale"
-# )
-# print("****Resize: Transform to scale down, maintaining original aspect ratio****\nTransformation URL --> " + url, "\n")
+url, options = cloudinary_url(
+    "llama",
+    width=500,
+    crop="scale"
+)
+print("****Resize: Transform to scale down, maintaining original aspect ratio****\nTransformation URL --> " + url, "\n")
 
 # Crop an asset
 # url, options = cloudinary_url(
