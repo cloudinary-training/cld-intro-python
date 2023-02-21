@@ -20,12 +20,12 @@ print("**** Set up and configure the SDK:****\n",
 # DOCS: https://cloudinary.com/documentation/image_transformations
 
 # Resize an asset
-url, options = cloudinary_url(
-    "llama",
-    width=500,
-    crop="scale"
-)
-print("****Resize: Transform to scale down, maintaining original aspect ratio****\nTransformation URL --> " + url, "\n")
+# url, options = cloudinary_url(
+#     "llama",
+#     width=500,
+#     crop="scale"
+# )
+# print("****Resize: Transform to scale down, maintaining original aspect ratio****\nTransformation URL --> " + url, "\n")
 
 # Crop an asset
 # url, options = cloudinary_url(
@@ -67,16 +67,16 @@ print("****Resize: Transform to scale down, maintaining original aspect ratio***
 # print("**** Auto Quality ****\nTransformation URL --> " + url, "\n")
 
 # Auto format, Auto quality, Auto Gravity - Cloudinary's special sauce
-# url, options = cloudinary_url(
-#     "cld-sample",
-#     width=600,
-#     height=800,
-#     crop="fill",
-#     gravity="auto",
-#     fetch_format="auto",
-#     quality="auto",
-# )
-# print("**** Auto Format, Auto Quality, Auto Gravity - Both ****\nTransformation URL --> " + url, "\n")
+url, options = cloudinary_url(
+    "cld-sample",
+    width=600,
+    height=800,
+    crop="fill",
+    gravity="auto",
+    fetch_format="auto",
+    quality="auto",
+)
+print("**** Auto Format, Auto Quality, Auto Gravity - Both ****\nTransformation URL --> " + url, "\n")
 
 # Rounding
 # url, options = cloudinary_url(

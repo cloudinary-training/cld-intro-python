@@ -71,12 +71,12 @@ print("**** Set up and configure the SDK:****\n",
 # print("**** Improve effect for an outdoor asset ****\nTransformation URL --> " + url, "\n")
 
 # Artistic filter
-# url, options = cloudinary_url(
-#     "cld-sample",
-#     height=800,
-#     crop="scale",
-#     effect="art:zorro"
-# )
+url, options = cloudinary_url(
+    "cld-sample",
+    height=800,
+    crop="scale",
+    effect="art:zorro"
+)
 # print("**** Add the artistic effect, zorro ****\nTransformation URL --> " + url, "\n")
 
 # Overlays - Text over image

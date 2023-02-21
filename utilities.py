@@ -31,7 +31,7 @@ print("**** Set up and configure the SDK:****\n",
 # print(cloudinary.CloudinaryImage("puma").image())
 
 # To create an video tag
-# print(cloudinary.CloudinaryVideo("tortoise").video())
+print(cloudinary.CloudinaryVideo("tortoise").video())
 
 # Build URL using build_url method (image)
 # print(cloudinary.CloudinaryImage("puma").build_url()) 
