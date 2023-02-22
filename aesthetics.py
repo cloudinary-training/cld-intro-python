@@ -71,12 +71,12 @@ print("**** Set up and configure the SDK:****\n",
 # print("**** Improve effect for an outdoor asset ****\nTransformation URL --> " + url, "\n")
 
 # Artistic filter
-url, options = cloudinary_url(
-    "cld-sample",
-    height=800,
-    crop="scale",
-    effect="art:zorro"
-)
+# url, options = cloudinary_url(
+#     "cld-sample",
+#     height=800,
+#     crop="scale",
+#     effect="art:zorro")
+
 # print("**** Add the artistic effect, zorro ****\nTransformation URL --> " + url, "\n")
 
 # Overlays - Text over image
@@ -93,14 +93,14 @@ url, options = cloudinary_url(
 
 
 # Overlays - Image over video
-# url, options = cloudinary_url("tortoise", resource_type="video",
-#                               transformation=[
-#                                   {'crop': 'fill', 'width': 500},
-#                                   {'overlay': 'cld-training-logo'},
-#                                   {'flags': "layer_apply", 'gravity': "north_east", 'y': 10, 'x': 10, 'width':100, 'opacity':50},
-#                                   {'quality': 'auto'}
-#                               ])
-# print("**** Overlay - Transform to add a Cloudinary logo overlay to the north east corner of an video ****\nTransformation URL --> " + url, "\n")
+url, options = cloudinary_url("tortoise", resource_type="video",
+                              transformation=[
+                                  {'crop': 'fill', 'width': 500},
+                                  {'overlay': 'cld-training-logo'},
+                                  {'flags': "layer_apply", 'gravity': "north_east", 'y': 10, 'x': 10, 'width':100, 'opacity':50},
+                                  {'quality': 'auto'}
+                              ])
+print("**** Overlay - Transform to add a Cloudinary logo overlay to the north east corner of an video ****\nTransformation URL --> " + url, "\n")
 
 
 # Overlays - Image over video (same as previous example, but using Video tag)
